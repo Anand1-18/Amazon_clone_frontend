@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Amazon Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #232f3e;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header a {
+      color: #ff9900;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    #cart-list {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .cart-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-details {
+      flex: 1;
+    }
+
+    .item-details h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #232f3e;
+    }
+
+    .item-details p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .item-price {
+      font-weight: bold;
+      color: #B12704;
+      margin-right: 20px;
+    }
+
+    .cart-item button {
+      padding: 6px 12px;
+      background: #ff9900;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cart-item button:hover {
+      background: #e68a00;
+    }
+
+    .cart-summary {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: right;
+      font-size: 18px;
+    }
+
+    #checkoutBtn {
+      padding: 12px 20px;
+      background: #ff9900;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    #checkoutBtn:hover {
+      background: #e68a00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cart</h1>
+    <a href="index.html">Back to Products</a>
+  </header>
+
+  <div id="cart-list">
+    <!-- Example Item -->
+    <div class="cart-item">
+      <div class="item-details">
+        <h3>Wireless Mouse</h3>
+        <p>Quantity: 1</p>
+      </div>
+      <span class="item-price">$25</span>
+      <button>Remove</button>
+    </div>
+  </div>
+
+  <div class="cart-summary">
+    Total: $<span id="total">25</span><br>
+    <button id="checkoutBtn">Checkout</button>
+  </div>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

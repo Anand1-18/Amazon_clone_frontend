@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      width: 350px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .form-container h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid #ddd;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .form-group input:focus {
+      border-bottom: 2px solid orange;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: orange;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      background: darkorange;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Create a new account</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Re-enter password" required>
+      </div>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+    <p id="message" class="message"></p>
+  </div>
+
+  <script>
+    // Handle form submission
+    document.getElementById("registerForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent real submission (for demo)
+
+      // Here you can add validation or send data to backend
+
+      // Redirect to login page after "register"
+      window.location.href = "login.html";
+    });
+  </script>
+
+<p id="registerMsg"></p>
+
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

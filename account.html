@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Account Page</title>
+
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      background-color: #2c3e50;
+      color: white;
+      width: 250px;
+      padding: 20px;
+      border-radius: 8px 0 0 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-card {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .username {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .email {
+      font-size: 1rem;
+      color: #ecf0f1;
+      margin-bottom: 10px;
+    }
+
+    .edit-btn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .edit-btn:hover {
+      background-color: #2980b9;
+    }
+
+    .nav-list {
+      list-style-type: none;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .nav-list li {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .nav-list li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-list li a:hover {
+      background-color: #34495e;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .account-info {
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .account-info p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .list-section {
+      margin-top: 40px;
+    }
+
+    .list {
+      list-style-type: none;
+    }
+
+    .list-item {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      font-size: 1rem;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+
+    .list-item:hover {
+      background-color: #ecf0f1;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-card">
+        <img src="https://in.pinterest.com/cdharane/download" alt="Profile" class="avatar">
+        <h2 class="username">Anand Singh</h2>
+        <p class="email">anands@gmail.com</p>
+        <button class="edit-btn">Edit Profile</button>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="account-section">
+        <h2 class="section-title">Account Overview</h2>
+        <div class="account-info">
+          <p><strong>Name:</strong> Anand Singh</p>
+          <p><strong>Email:</strong> anands@gmail.com</p>
+          <p><strong>Joined:</strong> January 2023</p>
+        </div>
+      </section>
+
+      <!-- List Section -->
+      <section class="list-section">
+        <h2 class="section-title">Recent Activities</h2>
+        <ul class="list">
+          <li class="list-item">Completed Task 1</li>
+          <li class="list-item">Updated Profile Picture</li>
+          <li class="list-item">Joined New Group</li>
+          <li class="list-item">Added New Post</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
