@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://amazon-clone-5z5b.onrender.com/api/auth";
 
 // REGISTER
 const registerForm = document.getElementById("registerForm");

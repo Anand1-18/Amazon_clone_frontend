@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://amazon-clone-5z5b.onrender.com/api";
 
 // Load products
 async function loadProducts() {

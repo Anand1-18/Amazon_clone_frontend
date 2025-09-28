@@ -1,7 +1,7 @@
 const token = localStorage.getItem('token');
 
 async function fetchProducts() {
-  const res = await fetch('http://localhost:5000/api/products');
+  const res = await fetch('https://amazon-clone-5z5b.onrender.com/api/products');
   const products = await res.json();
   const container = document.getElementById('product-list');
   container.innerHTML = '';

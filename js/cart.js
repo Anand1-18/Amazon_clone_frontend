@@ -1,7 +1,7 @@
 const token = localStorage.getItem('token');
 
 async function fetchCart() {
-  const res = await fetch('http://localhost:5000/api/cart', {
+  const res = await fetch('https://amazon-clone-5z5b.onrender.com/api/cart', {
     headers: { 'Authorization': `Bearer ${token}` }
   });
   const cart = await res.json();
